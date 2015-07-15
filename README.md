@@ -7,3 +7,4 @@
 7. wybudzanie (mozliwosc hard reset?)
 8. zeby mozna bylo podac dowolny kolor (podac ile r ile g i ile b i zeby to dzialalo) (przemiatanie przez wszystkie mozliwosci)
 9. obadać co te timery robią znaczy jaka jest różnica między 8 bit i 16 bit oprócz oczywistej. i czy da się ten 16bit zrobić na 8 bit, czy to nie ma znaczenia i czy potencjalnie dźwięku tamtędy by nie dało się puścić
+10. taktowanie 12 Mhz
