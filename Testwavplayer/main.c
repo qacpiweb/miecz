@@ -5,7 +5,7 @@
 #include <avr/sleep.h>
 #include "PetitFS/diskio.h"
 #include "PetitFS/pff.h"
-#include"ButtonPress.h"
+#include "ButtonPress.h"
 
 // obs³uga Timer0 z preskalerem = 8
 #define TMR_START TCCR0B |= (1<<CS01)
@@ -77,8 +77,8 @@ if (hitcounter==9) hitcounter=0;
 // **************** main() ***********************************************
 int main(void) {
 	
-	DDRD  |= (1<<PD4)|(1<<PD0)|(1<<PD1)|(1<<PD2)|(1<<PD5);			//Wyjœcia dla diód, przycisku i std.
-	DDRB  |= (1<<PINB1);
+	DDRD  |= (1<<PD4)|(1<<PD0)|(1<<PD1)|(1<<PD2)|(1<<PD5)|(1<<PD7);			//Wyjœcia dla diód, przycisku i std.
+	DDRB  |= (1<<PINB1)|(1<<PINB0);
 	
 	//DDRB |= (1<<PB0) | (1<<PB1);				
 	PORTD |= (1<<PIND5);						//Wyjœcie na pin shutdown wzmacniacza
@@ -112,9 +112,9 @@ int main(void) {
 	// **************** pêtla g³ówna **********************************
 	while(1) {
 		if (pf_mount(&Fs)) continue;		//inicjalizacja FS
-
+		PORTB|=(1<<PINB0);
 		while(1) {
-
+			PORTD|=(1<<PIND7);
 		if (pf_opendir(&Dir, "")) break;	//otwarcie g³ównego folderu karty
 			
 		if (startup==1)						//odtworzenie dŸwiêku w³¹czania 
