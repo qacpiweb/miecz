@@ -12,4 +12,4 @@
 12. Optymalizacja kodu, jezeli bedzie zbyt duzy. Ogarnac jak sprawdzic rozmiar. 
 13. BONUS - zbadac potencjalnie jak dzialalby bootloader (http://ep.com.pl/files/3453.pdf), czy daloby sie to jakos fajnie zrobic, zeby meic mozliwosc programowania mikrokontrolera poprzez podpiecie do usb, wtedy tez byloby super, jakby sie udalo wrocic do pcozatkowego zamyslu, czyli zmiana zawartosci akrty microsd przez mikrokontroler (bez posrednictwa obrzydliwego konwertera). Ewentualnie czytanie kodu przez mikrokontroler z karty (tez mozliwosc zmiany, ale z posrednictwem obrzydliwego konwertera) Bootloader to by byla swietna sprawa, bo kazdy moglby oprogramowanie sobie zmienic. Na razie nie priorytet, ale potencjalnie bardzo pozytywny dodatek.
 14. Sprawdzić wielkosc kodu.
-15. 15. Efekt wysuwania i wsuwania ostrza poprzez sterowanie jasnoci diody.
+15. Efekt wysuwania i wsuwania ostrza poprzez sterowanie jasnoci diody.
